@@ -34,3 +34,4 @@ This document outlines the objectives and key results for setting up Prometheus 
 ## Conclusion
 
 This document outlines the objectives and key results for deploying Prometheus and Grafana in a Minikube Kubernetes cluster running inside GitHub Codespaces. By following the steps described here, you will be able to monitor and visualize Kubernetes metrics effectively, providing insights into your cluster's performance and behavior.
+

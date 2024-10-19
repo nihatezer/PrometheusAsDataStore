@@ -130,4 +130,3 @@ Start by creating a Codespace and opening a terminal.
 ## Conclusion
 
 By following these steps, you now have Prometheus running as a data source for Grafana in a Minikube cluster hosted in GitHub Codespaces. This setup allows you to scrape, visualize, and monitor your Kubernetes environment efficiently.
-

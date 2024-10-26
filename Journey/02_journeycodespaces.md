@@ -48,21 +48,22 @@ helm install prometheus prometheus-community/prometheus -n monitoring
 helm install grafana grafana/grafana -n monitoring
 ```
 
-@rifaterdemsahin ➜ /workspaces/PrometheusAsDataSource (main) $ kubectl get pods -A
+```
+@nihatezer ➜ /workspaces/PrometheusAsDataStore (main) $ kubectl get pods -A
 NAMESPACE     NAME                                                 READY   STATUS    RESTARTS      AGE
-kube-system   coredns-6f6b679f8f-v8rmh                             1/1     Running   2 (28m ago)   147m
-kube-system   etcd-minikube                                        1/1     Running   2 (28m ago)   147m
-kube-system   kube-apiserver-minikube                              1/1     Running   2 (28m ago)   147m
-kube-system   kube-controller-manager-minikube                     1/1     Running   2 (28m ago)   147m
-kube-system   kube-proxy-6lts6                                     1/1     Running   2 (28m ago)   147m
-kube-system   kube-scheduler-minikube                              1/1     Running   2 (28m ago)   147m
-kube-system   storage-provisioner                                  1/1     Running   4 (28m ago)   147m
-monitoring    grafana-fcff55447-7flvv                              0/1     Running   0             6s
-monitoring    prometheus-alertmanager-0                            1/1     Running   0             22s
-monitoring    prometheus-kube-state-metrics-75b5bb4bf8-6h9js       1/1     Running   0             22s
-monitoring    prometheus-prometheus-node-exporter-ftbv5            1/1     Running   0             22s
-monitoring    prometheus-prometheus-pushgateway-84557d6c79-4fcc2   1/1     Running   0             22s
-monitoring    prometheus-server-644d686bc6-qbfrk                   1/2     Running   0             22s
+kube-system   coredns-6f6b679f8f-l4zvr                             1/1     Running   2 (23s ago)   7d
+kube-system   etcd-minikube                                        0/1     Running   2 (23s ago)   7d
+kube-system   kube-apiserver-minikube                              0/1     Running   2 (23s ago)   7d
+kube-system   kube-controller-manager-minikube                     0/1     Running   2 (23s ago)   7d
+kube-system   kube-proxy-vjkss                                     1/1     Running   2 (23s ago)   7d
+kube-system   kube-scheduler-minikube                              0/1     Running   2 (23s ago)   7d
+kube-system   storage-provisioner                                  1/1     Running   4 (23s ago)   7d
+monitoring    prometheus-alertmanager-0                            1/1     Running   2 (23s ago)   7d
+monitoring    prometheus-kube-state-metrics-75b5bb4bf8-q5s69       0/1     Running   2 (23s ago)   7d
+monitoring    prometheus-prometheus-node-exporter-7dgrw            1/1     Running   2 (23s ago)   7d
+monitoring    prometheus-prometheus-pushgateway-84557d6c79-z2tvx   0/1     Running   2 (23s ago)   7d
+monitoring    prometheus-server-644d686bc6-7k22l                   1/2     Running   4 (23s ago)   7d
+```
 
 # Port forward Grafana
 
